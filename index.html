@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">        
+        <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+        <link href='/style.css' type='text/css' rel='stylesheet'>
+        <title>Generator</title>
+    </head>
+    <body>
+        <div class='main'>
+            <section class='header'>
+                <h2>Generator</h2>
+            </section>
+            <section class='controls'>
+                <label for='realtime'><input id='realtime' type='checkbox'>Realtime processing</label>
+            </section>
+            <section class='workflow'>
+                <div id='data' contentEditable='true'></div>
+                <div id='output'></div>
+            </section>
+            <button id='copy'><span class='ok'>&#x2714;</span>Copy</button>
+        </div>
+        <script src="/parse.js"></script>
+    </body>
+</html>

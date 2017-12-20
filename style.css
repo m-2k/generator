@@ -1,0 +1,97 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #fafafa ;
+    background-color: #333;
+    font-family: 'Barlow', 'PT Sans Narrow', sans-serif;
+    height: 100%;
+    color: #bbb;
+}
+
+#data {
+    flex-grow: 1;
+    border: 1px dashed #574a77;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+#output {
+    flex-grow: 1;
+    border: 1px dashed #774227;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 0.84rem;
+}
+#realtime { margin-right: 0.6em; }
+
+span.list { color: #6cba11; }
+span.edit { color: #dd4673; }
+span.number { color: #d28086; }
+span.set { color: #4db68d; }
+span.url { color: #24a1ae; }
+span.next { color: #36a0dd; }
+span.end { color: #6cba11; }
+
+div.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 27rem;
+}
+
+section.header {
+    margin: 0.7rem;
+}
+section.controls {
+    color: #e8577f;
+    padding-left: 0.1rem;
+    margin: 0.4rem;
+}
+section.workflow {
+    display: flex;
+/*    align-items: flex-start;*/
+    align-items: stretch;
+    color: #999;
+    margin-top: 1rem;
+    padding-top: 0.4rem;
+    background-color: rgba(43, 44, 45, 0.56);
+    border-radius: 3px;
+}
+
+h2 {
+    color: #91ba25;
+    font-size: 2rem;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+button {
+    align-self: flex-end;
+    cursor: pointer;
+    font-weight: 100;
+    color: #91ba25;
+    border: 0.1rem solid #4e4633;
+    border-radius: 0.2rem;
+    -webkit-font-smoothing: antialiased;
+    padding: 0.2rem 0.8rem;
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: none;
+    background-color: rgba(155, 124, 85, 0.07);
+}
+button:hover { color: #acdd2c; background-color: rgba(155, 124, 85, 0.12); }
+#copy .ok {
+    display: none;
+    color: #acdd2c;
+    margin-right: 0.3rem;
+}
+#copy[status=done] .ok {
+    display: inline;
+}
+
+@media screen and (max-width: 600px), screen and (max-device-width: 1080px) {
+    section.workflow, section.header { flex-direction: column; }
+    section.header h2 { font-size: 1.4rem; letter-spacing: 0.2rem; }
+}
+
